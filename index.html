@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            background-color: #EDE8DC;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+            background-image: url(камера.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {background-color: rgba(255, 251, 230, 0.9); /* Полупрозрачность */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Теневой эффект */
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #FFFBE6;
+            margin: 20px;
+           
+        }
+        .main-title {
+font-family: 'Roboto', sans-serif;
+            font-size: 36px;
+            margin: 0;
+        }
+        .sub-title {
+            font-size: 24px;
+            color: #A5B68D;
+            margin: 10px 0;
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            margin-top: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Теневой эффект */
+        }
+        .welcome-message {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #A5B68D;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        img {
+            height: 350px;
+            width: auto;
+        }
+.gradient { background: linear-gradient(to right, #A5B68D, rgba(255, 251, 230, 0.9)); color: white; /* Изменение цвета текста для лучшей видимости */ 
+padding: 10px; 
+
+ }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #A5B68D;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-link {
+            color: rgb(98, 15, 15);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            color: white;
+        }
+        .nav-link:visited {
+            color: white;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #FFFBE6;
+border-radius: 10px;
+        }
+        .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .achievement-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            box-shadow: 5px 11px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный переход */ 
+        }
+.achievement-card:hover { transform: translateY(-5px); /* Сдвиг при наведении */ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более выраженная тень при наведении */ }
+        .achievement-card h3 {font-family: 'Raleway', sans-serif;
+            margin-top: 0;
+        }
+        .achievement-card img {
+            width: 200px;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+        footer a:hover {
+            color: #A2D2DF;
+        }
+        footer a:visited {
+            color: #A5B68D;
+        }
+        footer a {
+            color: rgb(98, 15, 15);
+        }
+        /* Новый раздел для владения фототехнологиями */
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+           padding: 50px;
+           /*  margin-top: 50px;*/
+          /*  background-color: #f9f9f9;  Задает фон для контейнера */
+            border-radius: 10px;
+        }
+        .skill-card {
+           background-color: #FFFBE6;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 5px 11px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .skill-card img {
+            width: 250px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+.skill-card:hover { transform: translateY(-5px); /* Сдвиг при наведении */ box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более выраженная тень при наведении */
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="main-title">Привет! Я Виктория Бородич — фотограф</h1>
+        <h2 class="sub-title">Запечатлеваю незабываемые моменты</h2>
+        <p class="welcome-message">Я специализируюсь на портретной и семейной фотографии, помогая вам сохранить самые важные моменты вашей жизни.</p>
+        <img src="я.jpg" alt="Виктория Бородич - фотограф" class="profile-photo">
+        <br>
+        <a href="https://web.telegram.org/k/#@vi_borodich" class="cta-button">Связаться со мной</a>
+    </header>
+    <nav>
+        <a href="#ach" class="nav-link">Достижения</a>
+        <a href="#op" class="nav-link">Опыт</a>
+        <a href="#cont" class="nav-link">Контакты</a>
+    </nav>
+    <main>
+<div id="ach"><h2 class="gradient"> Достижения </h2></div>
+        <div class="achievements" >
+</br>
+            <div class="achievement-card">
+                <img src="vogue.jpg" alt="">
+</br>
+                <h3>Публикации в журналах</h3>
+                <p>Мои работы были опубликованы в известных журналах, таких как Vogue и National Geographic.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="выставка.jpg" alt="">
+</br>
+                <h3>Выставки</h3>
+                <p>Участвовала в международных выставках в Париже и Нью-Йорке, демонстрируя свои уникальные фотографии.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="награда.jpg" alt="">
+</br>
+                <h3>Награды</h3>
+                <p>Обладатель премий за лучшую портретную фотографию.</p>
+            </div>
+            <div class="achievement-card">
+                <img src="яяя.jpg" alt="">
+</br>
+                <h3>Опыт работы</h3>
+                <p>Более 10 лет профессионального опыта в сфере фотографии.</p>
+            </div>
+      
+</div>
+</br></br></br>
+        <!-- Новый раздел для владения фототехнологиями -->
+        <div id="op">
+           <h2 class="gradient">Владение фототехнологиями</div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="камеры.jpg" alt="">
+                    <h3>Фотография</h3>
+                    <p>Профессиональная работа с различными фотокамерами и объективами.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="обработка.jpg" alt="">
+                    <h3>Редактирование</h3>
+                    <p>Опыт работы с Adobe Photoshop и Lightroom для обработки изображений.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="студийное.jpg" alt="">
+                    <h3>Освещение</h3>
+                    <p>Знание различных техник освещения для создания качественных снимков.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="композиция.jpg" alt="">
+                    <h3>Композиция</h3>
+                    <p>Умение создавать гармоничные и привлекательные композиции.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="ретушь.jpg" alt="">
+                    <h3>Ретушь</h3>
+                    <p>Профессиональная ретушь фотографий для достижения идеального результата.</p>
+                </div>
+  <div class="skill-card">
+                    <img src="дрон.jpg" alt="">
+                    <h3>Съемка с дронов</h3>
+                    <p>Управление дроном для создания аэрофотоснимков и видеозаписей. Это требует знания правил и законов, связанных с полетами дронов, а также навыков пилотирования.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="info" id="cont">
+        <footer>
+            <section>
+                <p>Следите за мной в социальных сетях:</p>
+                <a href="https://www.instagram.com/vi_borodich?igsh=MWNvZ3Q2NGR3d25icw==">Instagram</a>
+                <a href="https://vk.com/vi.boro">VK</a>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
